@@ -26,15 +26,28 @@
       padding: 2rem;
       border-radius: 10px;
     }
+    
+    /* Button styling */
+    .toggle-button {
+      margin-top: 1rem;
+      background-color: lightblue;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
-  <div class="hero-section">
-    <div class="hero-text">
+  div class="hero-section">
+    <div class="hero-text" id="heroText">
       <h1>Welcome to Hotel Santi</h1>
-      <p>Your perfect getaway in the mountains.</p>
+      <p>Your perfect getaway in the mountains. Experience stunning views, serene landscapes, and the tranquility of nature.</p>
     </div>
   </div>
+
+  <button class="toggle-button" id="toggleButton">Expand</button>
 
   <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -61,7 +74,21 @@
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq84MTRZptpL57b+0ptE1u4j29O3Lq7gE+YqS4+gD7c1B5dQ4F" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-4yxHkN0Sb1C59GgJ5xBL1/+jHTT/jIFLFT4bA0l1a3ro1LydvYq26RyX3d4V8/u1" crossorigin="anonymous"></script>
-    
+  
+  <script>
+    const heroText = document.getElementById("heroText");
+    const toggleButton = document.getElementById("toggleButton");
+
+    toggleButton.addEventListener("click", function() {
+      heroText.classList.toggle("expanded");
+
+      if (heroText.classList.contains("expanded")) {
+        toggleButton.textContent = "Contract";
+      } else {
+        toggleButton.textContent = "Expand";
+      }
+    });
+  </script>
   <!-- Main Heading -->
   <h1 class="text-center"> Main </h1>
 
