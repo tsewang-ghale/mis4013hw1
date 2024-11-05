@@ -21,20 +21,33 @@
 </head>
 
 <body>
-  <div class="container services-section">
-    <h2 class="text-center mb-4">Our Services</h2>
-      <div class="col-md-4">
-        <div class="card service-card">
-          <div class="card-body">
-          <h5 class="card-title">Horse Services</h5>
-          <p class="card-text">Enjoy horseback riding through the stunning landscapes around our hotel.</p>
-          <button onclick="toggleDetails(this)">Show More</button>
-          <p class="additional-details" style="display: none;">
+ <div class="container services-section">
+  <h2 class="text-center mb-4">Our Services</h2>
+  <div class="col-md-4">
+    <div class="card service-card">
+      <div class="card-body">
+        <h5 class="card-title">Horse Services</h5>
+        <button onclick="toggleDetails(this)">Show More</button>
+        <p class="additional-details" style="display: none;">
           Enjoy horseback riding through the stunning landscapes around our hotel. Suitable for all levels, our guides will ensure a safe and memorable experience.
-      </p>
+        </p>
+      </div>
     </div>
   </div>
 </div>
+
+<script>
+  function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    if (details.style.display === "none") {
+      details.style.display = "block";
+      button.innerText = "Show Less";
+    } else {
+      details.style.display = "none";
+      button.innerText = "Show More";
+    }
+  }
+</script>
 
       <div class="col-md-4">
         <div class="card service-card">
