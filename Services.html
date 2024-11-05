@@ -74,31 +74,32 @@
           </div>
         </div>
   
-        <div class="col-md-4">
-          <div class="card service-card">
-            <div class="card-body">
-              <h5 class="card-title">Healthy and Delicious Food</h5>
-              <button onclick="toggleDetails(this)">Show More</button>
-              <p class="additional-details" style="display: none;">
-                Our restaurant serves a variety of healthy and delicious meals made with fresh, local ingredients. Enjoy a range of options to suit all tastes and dietary preferences.
-              </p>
-            </div>
+       <div class="col-md-4">
+        <div class="card service-card">
+          <div class="card-body">
+            <h2 class="card-title">Healthy and Delicious Food</h2> <!-- Heading 2 -->
+            <button onclick="toggleDetails(this)">Show More</button>
+            <p class="additional-details" style="display: none;">
+              Our restaurant serves a variety of healthy and delicious meals made with fresh, local ingredients. Enjoy a range of options to suit all tastes and dietary preferences.
+            </p>
           </div>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="card service-card">
+          <div class="card-body">
+            <h2 class="card-title">Guided Tours</h2> <!-- Heading 2 -->
+            <button onclick="toggleDetails(this)">Show More</button>
+            <p class="additional-details" style="display: none;">
+              Explore the beautiful surroundings with our expert guides. Our guided tours offer insights into the local culture and natural beauty of the area, enhancing your stay.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
-        <div class="col-md-4">
-          <div class="card service-card">
-            <div class="card-body">
-              <h5 class="card-title">Guided Tours</h5>
-              <button onclick="toggleDetails(this)">Show More</button>
-              <p class="additional-details" style="display: none;">
-                Explore the beautiful surroundings with our expert guides. Our guided tours offer insights into the local culture and natural beauty of the area, enhancing your stay.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <script>
         function toggleDetails(button) {
           const details = button.nextElementSibling;
