@@ -44,6 +44,7 @@
 
     .service-card .card-body {
       padding: 2rem;
+      background-color: transparent; /* Remove white background color */
     }
 
     .btn-back {
@@ -63,17 +64,16 @@
       color: #fff; /* Adjust text color for header */
     }
 
-    /* Red Text for Service Titles and Descriptions */
-    .service-card .card-title,
-    .service-card .card-text {
+    /* Red Text for Service Titles and White Text for Descriptions */
+    .service-card .card-title {
       font-size: 1.5rem;
       font-weight: bold;
-      color: red; /* Set text color to red for both title and description */
+      color: red; /* Set service titles to red */
     }
 
     .card-text {
       font-size: 1rem;
-      color: red; /* Make the card descriptions red too */
+      color: white; /* Set description text to white */
     }
   </style>
 </head>
