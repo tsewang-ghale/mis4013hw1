@@ -14,13 +14,20 @@
 
   <!-- Custom Styles -->
   <style>
+    /* Set the background image */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background-image: url('h6.JPG'); /* Ensure the image path is correct */
+      background-size: cover; /* Make the image cover the whole page */
+      background-position: center; /* Center the background */
+      background-attachment: fixed; /* Fix the background image during scroll */
+      color: white; /* Adjust text color for better contrast */
     }
-    
+
     .services-section {
       padding: 5rem 0;
+      background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay to make text more readable */
+      border-radius: 8px;
     }
     
     .service-card {
@@ -53,7 +60,7 @@
       font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
-      color: #343a40;
+      color: #fff; /* Adjust text color for header */
     }
 
     .card-title {
@@ -64,7 +71,7 @@
 
     .card-text {
       font-size: 1rem;
-      color: #555;
+      color: #f8f9fa;
     }
   </style>
 </head>
