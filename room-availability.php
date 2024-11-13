@@ -40,25 +40,25 @@
             <td>Single Room</td>
             <td>Available</td>
             <td>1 Person</td>
-            <td>$50</td>
+            <td>Rs.150</td>
           </tr>
           <tr>
             <td>Double Room</td>
             <td>Fully Booked</td>
             <td>2 People</td>
-            <td>$80</td>
+            <td>Rs.280</td>
           </tr>
           <tr>
             <td>Suite</td>
             <td>Available</td>
             <td>Up to 4 People</td>
-            <td>$150</td>
+            <td>Rs.350</td>
           </tr>
           <tr>
             <td>Deluxe Room</td>
             <td>Available</td>
             <td>2 People</td>
-            <td>$120</td>
+            <td>Rs.500</td>
           </tr>
           <!-- Add more rows as needed -->
         </tbody>
@@ -66,7 +66,7 @@
     </div>
 
     <a href="Index.html" class="btn btn-primary btn-back">Back to Main Page</a>
-  </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
